@@ -832,6 +832,26 @@ for _ in range(20):
     print(a, end=' ')  
     a, b = b, a + b   
 
+####Find N leading prime numbers
+def is_prime(num):
+    if num <= 1:
+        return False  
+    for i in range(2, int(num**0.5) + 1):  
+        if num % i == 0:
+            return False  
+    return True
+
+N = int(input("Enter the number of leading prime numbers to find: "))
+
+count = 0  
+current = 2 
+
+# Loop to find N primes
+while count < N:
+    if is_prime(current):
+        print(current, end=" ")  
+        count += 1  
+    current += 1  
 
 ### Coupon loop
 for i in range(7):
