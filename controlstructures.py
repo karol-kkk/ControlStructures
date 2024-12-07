@@ -197,10 +197,10 @@ if not x < 0 or not y < 0 :
 month = int(input('Enter month number (1..12): '))
 
 if month == 1 or month == 3 or month == 5 or month == 7 or month == 8 or month == 10 or month == 12:
-    days = 31  # months with 31 days
+    days = 31  
 elif month == 4 or month == 6 or month == 9 or month == 11:
-    days = 30  # months with 30 days
-else:  # February, considering non-leap years
+    days = 30  
+else:  
     days = 28
 
 print(f'Month {month} has {days} days')
@@ -241,8 +241,8 @@ university_expanded = ""
 for char in university:
     university_expanded = university_expanded + char + ' '
 
-print(university) # original university name
-print(university_expanded) # expanded university name
+print(university) 
+print(university_expanded) 
 
 
 ###
@@ -253,16 +253,9 @@ plain_text = 'The early bird catches the worm'
 encrypted_text = ''
 
 for char in plain_text:
-    # read the character's code (use ord())
     char_code = ord(char)
-    
-    # add one to the character's code
     char_code += 1
-    
-    # replace new character code with its corresponding character (use chr())
     encrypted_char = chr(char_code)
-    
-    # add encrypted character to encrypted text
     encrypted_text += encrypted_char
 
 
@@ -270,7 +263,7 @@ print(plain_text)
 print(encrypted_text)
 
 ###
-# Calculates the sum of integer numbers in the range <1,5>
+# Calculates the sum of integer numbers in the range <5,5>
 #
 sum = 0
 
